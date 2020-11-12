@@ -28,6 +28,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
@@ -223,6 +228,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="removed empty lines" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="630" y="258" width="481" height="568" key="NewPhpClassDialog" timestamp="1605203987297">
+      <screen x="72" y="27" width="1608" height="1023" />
+    </state>
+    <state x="630" y="258" width="481" height="568" key="NewPhpClassDialog/72.27.1608.1023@72.27.1608.1023" timestamp="1605203987297" />
     <state x="695" y="222" width="351" height="640" key="RollbackChangesDialog" timestamp="1605191013627">
       <screen x="72" y="27" width="1608" height="1023" />
     </state>
