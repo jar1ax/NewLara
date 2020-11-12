@@ -10,17 +10,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dde6b895-bd54-43df-9d5f-7262370438b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/post/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jar1ax.com.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jar1ax.com.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/post/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/post/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/routes/api.php" afterDir="false" />
+    <list default="true" id="dde6b895-bd54-43df-9d5f-7262370438b8" name="Default Changelist" comment="token(my way(w/o using $tokenObject))">
+      <change beforePath="$PROJECT_DIR$/post/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/post/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,8 +177,16 @@
       <workItem from="1605033003707" duration="1004000" />
       <workItem from="1605078971738" duration="1567000" />
       <workItem from="1605082603710" duration="4181000" />
-      <workItem from="1605190812795" duration="3499000" />
+      <workItem from="1605190812795" duration="4461000" />
     </task>
+    <task id="LOCAL-00001" summary="token(my way(w/o using $tokenObject))">
+      <created>1605195032535</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605195032535</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,12 +205,17 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="token(my way(w/o using $tokenObject))" />
+    <option name="LAST_COMMIT_MESSAGE" value="token(my way(w/o using $tokenObject))" />
   </component>
   <component name="WindowStateProjectService">
     <state x="695" y="222" width="351" height="640" key="RollbackChangesDialog" timestamp="1605191013627">
       <screen x="72" y="27" width="1608" height="1023" />
     </state>
     <state x="695" y="222" width="351" height="640" key="RollbackChangesDialog/72.27.1608.1023@72.27.1608.1023" timestamp="1605191013627" />
+    <state x="471" y="274" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1605195045043">
+      <screen x="72" y="27" width="1608" height="1023" />
+    </state>
+    <state x="471" y="274" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1608.1023@72.27.1608.1023" timestamp="1605195045043" />
   </component>
 </project>
