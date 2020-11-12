@@ -10,7 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dde6b895-bd54-43df-9d5f-7262370438b8" name="Default Changelist" comment="" />
+    <list default="true" id="dde6b895-bd54-43df-9d5f-7262370438b8" name="Default Changelist" comment="removed empty lines" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,9 +32,17 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
+      <path value="$PROJECT_DIR$/post/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/post/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/post/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/post/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/post/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/post/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/post/vendor/graham-campbell/result-type" />
       <path value="$PROJECT_DIR$/post/vendor/composer" />
       <path value="$PROJECT_DIR$/post/vendor/psr/http-client" />
       <path value="$PROJECT_DIR$/post/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/post/vendor/psr/http-factory" />
       <path value="$PROJECT_DIR$/post/vendor/psr/container" />
       <path value="$PROJECT_DIR$/post/vendor/psr/http-message" />
       <path value="$PROJECT_DIR$/post/vendor/psr/simple-cache" />
@@ -46,13 +54,17 @@
       <path value="$PROJECT_DIR$/post/vendor/asm89/stack-cors" />
       <path value="$PROJECT_DIR$/post/vendor/brick/math" />
       <path value="$PROJECT_DIR$/post/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/post/vendor/defuse/php-encryption" />
       <path value="$PROJECT_DIR$/post/vendor/facade/ignition" />
       <path value="$PROJECT_DIR$/post/vendor/facade/flare-client-php" />
       <path value="$PROJECT_DIR$/post/vendor/facade/ignition-contracts" />
       <path value="$PROJECT_DIR$/post/vendor/league/mime-type-detection" />
       <path value="$PROJECT_DIR$/post/vendor/league/flysystem" />
       <path value="$PROJECT_DIR$/post/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/post/vendor/league/oauth2-server" />
+      <path value="$PROJECT_DIR$/post/vendor/league/event" />
       <path value="$PROJECT_DIR$/post/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/post/vendor/nyholm/psr7" />
       <path value="$PROJECT_DIR$/post/vendor/ramsey/uuid" />
       <path value="$PROJECT_DIR$/post/vendor/ramsey/collection" />
       <path value="$PROJECT_DIR$/post/vendor/vlucas/phpdotenv" />
@@ -60,6 +72,7 @@
       <path value="$PROJECT_DIR$/post/vendor/egulias/email-validator" />
       <path value="$PROJECT_DIR$/post/vendor/laravel/tinker" />
       <path value="$PROJECT_DIR$/post/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/post/vendor/laravel/passport" />
       <path value="$PROJECT_DIR$/post/vendor/mockery/mockery" />
       <path value="$PROJECT_DIR$/post/vendor/monolog/monolog" />
       <path value="$PROJECT_DIR$/post/vendor/myclabs/deep-copy" />
@@ -79,6 +92,7 @@
       <path value="$PROJECT_DIR$/post/vendor/symfony/polyfill-ctype" />
       <path value="$PROJECT_DIR$/post/vendor/symfony/polyfill-intl-idn" />
       <path value="$PROJECT_DIR$/post/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/post/vendor/symfony/psr-http-message-bridge" />
       <path value="$PROJECT_DIR$/post/vendor/symfony/service-contracts" />
       <path value="$PROJECT_DIR$/post/vendor/symfony/translation-contracts" />
       <path value="$PROJECT_DIR$/post/vendor/symfony/string" />
@@ -104,10 +118,15 @@
       <path value="$PROJECT_DIR$/post/vendor/doctrine/lexer" />
       <path value="$PROJECT_DIR$/post/vendor/doctrine/inflector" />
       <path value="$PROJECT_DIR$/post/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/post/vendor/firebase/php-jwt" />
       <path value="$PROJECT_DIR$/post/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/post/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/post/vendor/php-http/message-factory" />
       <path value="$PROJECT_DIR$/post/vendor/fideloper/proxy" />
       <path value="$PROJECT_DIR$/post/vendor/fruitcake/laravel-cors" />
+      <path value="$PROJECT_DIR$/post/vendor/paragonie/random_compat" />
       <path value="$PROJECT_DIR$/post/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/post/vendor/phpseclib/phpseclib" />
       <path value="$PROJECT_DIR$/post/vendor/ralouphie/getallheaders" />
       <path value="$PROJECT_DIR$/post/vendor/sebastian/code-unit-reverse-lookup" />
       <path value="$PROJECT_DIR$/post/vendor/sebastian/object-reflector" />
@@ -130,13 +149,6 @@
       <path value="$PROJECT_DIR$/post/vendor/guzzlehttp/psr7" />
       <path value="$PROJECT_DIR$/post/vendor/guzzlehttp/promises" />
       <path value="$PROJECT_DIR$/post/vendor/nunomaduro/collision" />
-      <path value="$PROJECT_DIR$/post/vendor/swiftmailer/swiftmailer" />
-      <path value="$PROJECT_DIR$/post/vendor/tijsverkoyen/css-to-inline-styles" />
-      <path value="$PROJECT_DIR$/post/vendor/dragonmantank/cron-expression" />
-      <path value="$PROJECT_DIR$/post/vendor/phpdocumentor/type-resolver" />
-      <path value="$PROJECT_DIR$/post/vendor/phpdocumentor/reflection-docblock" />
-      <path value="$PROJECT_DIR$/post/vendor/phpdocumentor/reflection-common" />
-      <path value="$PROJECT_DIR$/post/vendor/graham-campbell/result-type" />
     </include_path>
   </component>
   <component name="ProjectId" id="1k6FryK2oH90h3pNytriBtA4hup" />
@@ -163,7 +175,30 @@
       <workItem from="1605033003707" duration="1004000" />
       <workItem from="1605078971738" duration="1567000" />
       <workItem from="1605082603710" duration="4181000" />
+      <workItem from="1605190812795" duration="5345000" />
     </task>
+    <task id="LOCAL-00001" summary="token(my way(w/o using $tokenObject))">
+      <created>1605195032535</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605195032535</updated>
+    </task>
+    <task id="LOCAL-00002" summary="gitignore new">
+      <created>1605200704412</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605200704412</updated>
+    </task>
+    <task id="LOCAL-00003" summary="removed empty lines">
+      <created>1605201155496</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605201155496</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,5 +215,21 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="token(my way(w/o using $tokenObject))" />
+    <MESSAGE value="gitignore new" />
+    <MESSAGE value="removed empty lines" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed empty lines" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="695" y="222" width="351" height="640" key="RollbackChangesDialog" timestamp="1605191013627">
+      <screen x="72" y="27" width="1608" height="1023" />
+    </state>
+    <state x="695" y="222" width="351" height="640" key="RollbackChangesDialog/72.27.1608.1023@72.27.1608.1023" timestamp="1605191013627" />
+    <state x="471" y="274" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1605201166664">
+      <screen x="72" y="27" width="1608" height="1023" />
+    </state>
+    <state x="471" y="274" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1608.1023@72.27.1608.1023" timestamp="1605201166664" />
   </component>
 </project>
