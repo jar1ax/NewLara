@@ -14,14 +14,15 @@ class UserController extends Controller
             'email' => 'required|email',
             'password' => 'required|min:6|confirmed'
         ]);
+
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
             'password' => bcrypt($request->password)
         ]);
+
         $token = $user->createToken('AuthToken')->accessToken;
-        return response()->json([
-            'token' => $token],
-            201);
+
+        return response()->json(['token' => $token], 201);
     }
 }

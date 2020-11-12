@@ -10,9 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dde6b895-bd54-43df-9d5f-7262370438b8" name="Default Changelist" comment="gitignore new">
-      <change beforePath="$PROJECT_DIR$/post/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/app/Http/Controllers/UserController.php" afterDir="false" />
-    </list>
+    <list default="true" id="dde6b895-bd54-43df-9d5f-7262370438b8" name="Default Changelist" comment="removed empty lines" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -177,7 +175,7 @@
       <workItem from="1605033003707" duration="1004000" />
       <workItem from="1605078971738" duration="1567000" />
       <workItem from="1605082603710" duration="4181000" />
-      <workItem from="1605190812795" duration="4905000" />
+      <workItem from="1605190812795" duration="5345000" />
     </task>
     <task id="LOCAL-00001" summary="token(my way(w/o using $tokenObject))">
       <created>1605195032535</created>
@@ -193,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605200704412</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="removed empty lines">
+      <created>1605201155496</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605201155496</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,16 +219,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="token(my way(w/o using $tokenObject))" />
     <MESSAGE value="gitignore new" />
-    <option name="LAST_COMMIT_MESSAGE" value="gitignore new" />
+    <MESSAGE value="removed empty lines" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed empty lines" />
   </component>
   <component name="WindowStateProjectService">
     <state x="695" y="222" width="351" height="640" key="RollbackChangesDialog" timestamp="1605191013627">
       <screen x="72" y="27" width="1608" height="1023" />
     </state>
     <state x="695" y="222" width="351" height="640" key="RollbackChangesDialog/72.27.1608.1023@72.27.1608.1023" timestamp="1605191013627" />
-    <state x="471" y="274" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1605200721283">
+    <state x="471" y="274" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1605201166664">
       <screen x="72" y="27" width="1608" height="1023" />
     </state>
-    <state x="471" y="274" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1608.1023@72.27.1608.1023" timestamp="1605200721283" />
+    <state x="471" y="274" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1608.1023@72.27.1608.1023" timestamp="1605201166664" />
   </component>
 </project>
