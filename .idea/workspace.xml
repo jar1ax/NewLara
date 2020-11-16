@@ -10,7 +10,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dde6b895-bd54-43df-9d5f-7262370438b8" name="Default Changelist" comment="removed empty lines" />
+    <list default="true" id="dde6b895-bd54-43df-9d5f-7262370438b8" name="Default Changelist" comment="dev init">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/app/Services/UserService.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/app/Services/UserService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/post/phpunit.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -181,6 +187,9 @@
       <workItem from="1605078971738" duration="1567000" />
       <workItem from="1605082603710" duration="4181000" />
       <workItem from="1605190812795" duration="5345000" />
+      <workItem from="1605253321454" duration="18948000" />
+      <workItem from="1605445810016" duration="11919000" />
+      <workItem from="1605510064070" duration="23951000" />
     </task>
     <task id="LOCAL-00001" summary="token(my way(w/o using $tokenObject))">
       <created>1605195032535</created>
@@ -203,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605201155496</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="dev init">
+      <created>1605204131251</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605204131252</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,20 +241,31 @@
     <MESSAGE value="token(my way(w/o using $tokenObject))" />
     <MESSAGE value="gitignore new" />
     <MESSAGE value="removed empty lines" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed empty lines" />
+    <MESSAGE value="dev init" />
+    <option name="LAST_COMMIT_MESSAGE" value="dev init" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="689" y="335" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605533111675">
+      <screen x="72" y="27" width="1848" height="1173" />
+    </state>
+    <state x="609" y="296" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/72.27.1608.1023@72.27.1608.1023" timestamp="1605259799213" />
+    <state x="689" y="335" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/72.27.1848.1173@72.27.1848.1173" timestamp="1605533111675" />
     <state x="630" y="258" width="481" height="568" key="NewPhpClassDialog" timestamp="1605203987297">
       <screen x="72" y="27" width="1608" height="1023" />
     </state>
     <state x="630" y="258" width="481" height="568" key="NewPhpClassDialog/72.27.1608.1023@72.27.1608.1023" timestamp="1605203987297" />
-    <state x="695" y="222" width="351" height="640" key="RollbackChangesDialog" timestamp="1605191013627">
-      <screen x="72" y="27" width="1608" height="1023" />
+    <state x="788" y="251" width="321" height="640" key="RollbackChangesDialog" timestamp="1605531183685">
+      <screen x="72" y="27" width="1848" height="1173" />
     </state>
     <state x="695" y="222" width="351" height="640" key="RollbackChangesDialog/72.27.1608.1023@72.27.1608.1023" timestamp="1605191013627" />
-    <state x="471" y="274" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1605201166664">
+    <state x="788" y="251" width="321" height="640" key="RollbackChangesDialog/72.27.1848.1173@72.27.1848.1173" timestamp="1605531183685" />
+    <state x="471" y="274" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1605204143944">
       <screen x="72" y="27" width="1608" height="1023" />
     </state>
-    <state x="471" y="274" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1608.1023@72.27.1608.1023" timestamp="1605201166664" />
+    <state x="471" y="274" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1608.1023@72.27.1608.1023" timestamp="1605204143944" />
+    <state x="539" y="251" width="672" height="678" key="search.everywhere.popup" timestamp="1605275610119">
+      <screen x="72" y="27" width="1608" height="1023" />
+    </state>
+    <state x="539" y="251" width="672" height="678" key="search.everywhere.popup/72.27.1608.1023@72.27.1608.1023" timestamp="1605275610119" />
   </component>
 </project>
