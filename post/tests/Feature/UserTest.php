@@ -2,7 +2,6 @@
 
 namespace Tests\Feature;
 
-
 use DateTime;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -10,11 +9,11 @@ use Illuminate\Support\Facades\DB;
 use Laravel\Passport\ClientRepository;
 use Tests\TestCase;
 
-
 class UserTest extends TestCase
 {
     use RefreshDatabase;
     use DatabaseMigrations;
+
     public $mockConsoleOutput = false;
     /**
      * A basic feature test example.
@@ -46,9 +45,7 @@ class UserTest extends TestCase
         ];
 
         $response = $this->json('POST','api/users', $data)->assertStatus(201);
-
         $response->assertJsonStructure(['token']);
-
     }
 }
 

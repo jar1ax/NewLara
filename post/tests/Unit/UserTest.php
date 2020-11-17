@@ -15,7 +15,6 @@ class UserTest extends TestCase
     use RefreshDatabase;
     use DatabaseMigrations;
 
-
     public $mockConsoleOutput = false;
     protected $userService;
 
@@ -53,6 +52,5 @@ class UserTest extends TestCase
         $this->assertNotEmpty($user);
         $this->assertInstanceOf(UserService::class,$this->userService);
         $this->assertDatabaseHas('users',['email'=>'onetest211223@tes.com']);
-
     }
 }
