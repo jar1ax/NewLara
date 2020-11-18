@@ -46,6 +46,12 @@ class UserTest extends TestCase
 
         $response = $this->json('POST','api/users', $data)->assertStatus(201);
         $response->assertJsonStructure(['token']);
+
+        $response = $this->post('api/users/login', [
+            'email' => 'onetestaq1121@test.com',
+            'password'=>'123456'
+        ])->assertOk();
+        $this->assertAuthenticated();
     }
 }
 
