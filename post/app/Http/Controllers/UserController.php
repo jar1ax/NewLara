@@ -16,9 +16,26 @@ class UserController extends Controller
 
     public function register(Request $request)
     {
-        $user= $this->userService->createUser($request->all());
+        $user= $this->userService->createUser(array_merge($request->only('name','email'),
+            ['password'=>bcrypt($request->password)]));
         $token = $user->createToken('AuthToken')->accessToken;
 
         return response()->json(['token' => $token], 201);
+    }
+
+    public function login(Request $request)
+    {
+        $request->validate([
+            'email' => 'required|email|exists:users,email',
+            'password' => 'required'
+        ]);
+
+        if( \Auth::attempt(['email'=>$request->email, 'password'=>$request->password]))
+        {
+            $user = \Auth::user();
+            $token = $user->createToken('AuthToken')->accessToken;
+
+            return response()->json(['token' => $token], 200);
+        }
     }
 }

@@ -9,9 +9,12 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\DB;
 use Laravel\Passport\ClientRepository;
 use Tests\TestCase;
+use Illuminate\Testing\TestResponse;
 
 class UserTest extends TestCase
 {
+
+
     use RefreshDatabase;
     use DatabaseMigrations;
 
@@ -44,7 +47,7 @@ class UserTest extends TestCase
         $data = [
             'name' => 'John Doe',
             'email'=>'onetest211223@tes.com',
-            'password'=>'123456',
+            'password'=>bcrypt($password='123456'),
             'password_confirmation'=>'123456'
         ];
 
@@ -52,5 +55,12 @@ class UserTest extends TestCase
         $this->assertNotEmpty($user);
         $this->assertInstanceOf(UserService::class,$this->userService);
         $this->assertDatabaseHas('users',['email'=>'onetest211223@tes.com']);
+
+        $response = $this->post('api/users/login', [
+            'email' => $user->email,
+            'password'=>$user->password
+        ]);
+
+        $response->assertOk();
     }
 }
