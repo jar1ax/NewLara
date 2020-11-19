@@ -10,10 +10,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dde6b895-bd54-43df-9d5f-7262370438b8" name="Default Changelist" comment="Login working and whitespaces are cleaned">
+    <list default="true" id="dde6b895-bd54-43df-9d5f-7262370438b8" name="Default Changelist" comment="Added tests for login api inside old tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/tests/Feature/UserTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/tests/Feature/UserTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/tests/Unit/UserTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/tests/Unit/UserTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +30,9 @@
         <option value="composer.json" />
       </list>
     </option>
+  </component>
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="master" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -192,6 +195,7 @@
       <workItem from="1605612238952" duration="12781000" />
       <workItem from="1605636651086" duration="171000" />
       <workItem from="1605682857796" duration="6592000" />
+      <workItem from="1605770988439" duration="23560000" />
     </task>
     <task id="LOCAL-00001" summary="token(my way(w/o using $tokenObject))">
       <created>1605195032535</created>
@@ -316,15 +320,23 @@
     <option name="LAST_COMMIT_MESSAGE" value="201-&gt;200 in login method" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="689" y="335" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605684308189">
+    <state x="699" y="184" width="574" height="874" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605796289876">
+      <screen x="72" y="27" width="1848" height="1173" />
+    </state>
+    <state x="699" y="184" width="574" height="874" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/72.27.1848.1173@72.27.1848.1173" timestamp="1605796289876" />
+    <state x="689" y="335" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605788892485">
       <screen x="72" y="27" width="1848" height="1173" />
     </state>
     <state x="609" y="296" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/72.27.1608.1023@72.27.1608.1023" timestamp="1605259799213" />
-    <state x="689" y="335" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/72.27.1848.1173@72.27.1848.1173" timestamp="1605684308189" />
+    <state x="689" y="335" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/72.27.1848.1173@72.27.1848.1173" timestamp="1605788892485" />
     <state x="630" y="258" width="481" height="568" key="NewPhpClassDialog" timestamp="1605203987297">
       <screen x="72" y="27" width="1608" height="1023" />
     </state>
     <state x="630" y="258" width="481" height="568" key="NewPhpClassDialog/72.27.1608.1023@72.27.1608.1023" timestamp="1605203987297" />
+    <state x="791" y="539" width="399" height="156" key="NewPhpFileDialog" timestamp="1605703543714">
+      <screen x="72" y="27" width="1848" height="1173" />
+    </state>
+    <state x="791" y="539" width="399" height="156" key="NewPhpFileDialog/72.27.1848.1173@72.27.1848.1173" timestamp="1605703543714" />
     <state x="788" y="251" width="321" height="640" key="RollbackChangesDialog" timestamp="1605683444041">
       <screen x="72" y="27" width="1848" height="1173" />
     </state>
@@ -335,14 +347,19 @@
     </state>
     <state x="471" y="274" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1608.1023@72.27.1608.1023" timestamp="1605204143944" />
     <state x="531" y="310" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1173@72.27.1848.1173" timestamp="1605636789234" />
+    <state x="777" y="528" width="428" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605691077137">
+      <screen x="72" y="27" width="1848" height="1173" />
+    </state>
+    <state x="777" y="528" width="428" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/72.27.1848.1173@72.27.1848.1173" timestamp="1605691077137" />
     <state x="721" y="307" width="539" height="619" key="git4idea.branch.GitSmartOperationDialog" timestamp="1605683256237">
       <screen x="72" y="27" width="1848" height="1173" />
     </state>
     <state x="721" y="307" width="539" height="619" key="git4idea.branch.GitSmartOperationDialog/72.27.1848.1173@72.27.1848.1173" timestamp="1605683256237" />
-    <state x="539" y="251" width="672" height="678" key="search.everywhere.popup" timestamp="1605275610119">
-      <screen x="72" y="27" width="1608" height="1023" />
+    <state x="609" y="284" width="773" height="778" key="search.everywhere.popup" timestamp="1605796028058">
+      <screen x="72" y="27" width="1848" height="1173" />
     </state>
     <state x="539" y="251" width="672" height="678" key="search.everywhere.popup/72.27.1608.1023@72.27.1608.1023" timestamp="1605275610119" />
+    <state x="609" y="284" width="773" height="778" key="search.everywhere.popup/72.27.1848.1173@72.27.1848.1173" timestamp="1605796028058" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
