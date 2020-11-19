@@ -1,0 +1,75 @@
+<?php
+
+namespace App\Http\Controllers;
+
+
+use Carbon\Carbon;
+use App\Models\ResetPassword;
+use App\Models\User;
+use App\Mail\ResetPasswordMail;
+use Illuminate\Support\Facades\Mail;
+use App\Http\Requests\ResetPasswordRequest;
+use App\Http\Requests\ForgotPasswordRequest;
+
+class ResetPasswordController extends Controller
+{
+
+    public function forgot(ForgotPasswordRequest $request)
+    {
+//        echo 1;die;
+        $token = (new ResetPassword())->createToken('ResetPassword');
+
+        $user = User::where('email', $request->email)->first();
+
+
+        if (!$user) {
+            return response()->json(['message' => 'Unable to find user with this email']);
+        }
+
+        $resetPassword = ResetPassword::updateOrcreate(
+            ['user_id' => $user->id],
+            [
+                'user_id' => $user->id,
+                'token' => $token
+            ]
+        );
+
+        if ($user && $resetPassword) {
+            Mail::to($request->email)->send(new ResetPasswordMail($token));
+
+            return response()->json(['message' => 'We have emailed you token! ']);
+        }
+        return response()->json(['message' => '1Unable to find user with this email']);
+    }
+
+    public function reset(ResetPasswordRequest $request)
+    {
+
+        $request->validate([
+            'token|required',
+            'password|min:6|confirmed'
+        ]);
+
+        $resetPassword = ResetPassword::where(['token' => $request->token])->first();
+
+        if (!$resetPassword) {
+            return response()->json(['message' => 'This token is invalid']);
+        }
+        if (CArbon::parse($resetPassword->created_at)->addMinutes(120)->isPast())
+        {
+            return response()->json(['message' => 'This token is invalid']);
+        }
+        $user=User::where(['id'=>$resetPassword->user_id])->first();
+
+        if (!$user)
+        {
+            return response()->json(['message' => 'We cannot find user with this user_id']);
+        }
+
+        $user->password = bcrypt($request->password);
+        $user->save();
+        $resetPassword->delete();
+
+        return response()->json(['message' => 'Password changed successfully!']);
+    }
+}
