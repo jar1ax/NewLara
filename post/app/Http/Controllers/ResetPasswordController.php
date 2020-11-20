@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-
 use Carbon\Carbon;
 use App\Models\ResetPassword;
 use App\Models\User;
@@ -16,25 +15,22 @@ class ResetPasswordController extends Controller
 
     public function forgot(ForgotPasswordRequest $request)
     {
-//        echo 1;die;
-        $token = (new ResetPassword())->createToken('ResetPassword');
-
         $user = User::where('email', $request->email)->first();
 
-
-        if (!$user) {
+        if (!$user)
+        {
             return response()->json(['message' => 'Unable to find user with this email']);
         }
 
-        $resetPassword = ResetPassword::updateOrcreate(
-            ['user_id' => $user->id],
-            [
+        $token = md5($request->email.Carbon::now());
+
+        $resetPassword = ResetPassword::create([
                 'user_id' => $user->id,
                 'token' => $token
-            ]
-        );
+            ]);
 
-        if ($user && $resetPassword) {
+        if ($user && $resetPassword)
+        {
             Mail::to($request->email)->send(new ResetPasswordMail($token));
 
             return response()->json(['message' => 'We have emailed you token! ']);
@@ -44,20 +40,17 @@ class ResetPasswordController extends Controller
 
     public function reset(ResetPasswordRequest $request)
     {
-
-        $request->validate([
-            'token|required',
-            'password|min:6|confirmed'
-        ]);
-
         $resetPassword = ResetPassword::where(['token' => $request->token])->first();
 
-        if (!$resetPassword) {
-            return response()->json(['message' => 'This token is invalid']);
-        }
-        if (CArbon::parse($resetPassword->created_at)->addMinutes(120)->isPast())
+        if (!$resetPassword)
         {
-            return response()->json(['message' => 'This token is invalid']);
+            return response()->json(['message' => '1This token is invalid']);
+        }
+        if (CArbon::parse($resetPassword->updated_at)->addMinutes(120)->isPast() or
+            CArbon::parse($resetPassword->created_at)->addMinutes(120)->isPast())
+        {
+            $resetPassword->delete();
+            return response()->json(['message' => '2This token is invalid']);
         }
         $user=User::where(['id'=>$resetPassword->user_id])->first();
 

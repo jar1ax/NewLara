@@ -10,9 +10,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dde6b895-bd54-43df-9d5f-7262370438b8" name="Default Changelist" comment="Added tests for login api inside old tests">
+    <list default="true" id="dde6b895-bd54-43df-9d5f-7262370438b8" name="Default Changelist" comment="Repsonse 404, validation in Requests">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_11_20,_19_54_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_11_20__19_54__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/app/Http/Controllers/ResetPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/app/Http/Controllers/ResetPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/app/Http/Requests/ForgotPasswordRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/app/Http/Requests/ForgotPasswordRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/app/Http/Requests/ResetPasswordRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/app/Http/Requests/ResetPasswordRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/app/Models/ResetPassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/app/Models/ResetPassword.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/database/migrations/2020_11_18_093200_create_reset_password_table.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/post/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -195,7 +201,10 @@
       <workItem from="1605612238952" duration="12781000" />
       <workItem from="1605636651086" duration="171000" />
       <workItem from="1605682857796" duration="6592000" />
-      <workItem from="1605770988439" duration="23560000" />
+      <workItem from="1605770988439" duration="23747000" />
+      <workItem from="1605810992450" duration="2876000" />
+      <workItem from="1605856094578" duration="5761000" />
+      <workItem from="1605863128221" duration="819000" />
     </task>
     <task id="LOCAL-00001" summary="token(my way(w/o using $tokenObject))">
       <created>1605195032535</created>
@@ -288,7 +297,21 @@
       <option name="project" value="LOCAL" />
       <updated>1605636746680</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Repsonse 404, validation in Requests">
+      <created>1605802278411</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1605802278411</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Repsonse 404, validation in Requests">
+      <created>1605802355910</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1605802355910</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,7 +340,8 @@
     <MESSAGE value="deleted all comments in configs" />
     <MESSAGE value="Login working and whitespaces are cleaned" />
     <MESSAGE value="201-&gt;200 in login method" />
-    <option name="LAST_COMMIT_MESSAGE" value="201-&gt;200 in login method" />
+    <MESSAGE value="Repsonse 404, validation in Requests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Repsonse 404, validation in Requests" />
   </component>
   <component name="WindowStateProjectService">
     <state x="699" y="184" width="574" height="874" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605796289876">
@@ -342,11 +366,11 @@
     </state>
     <state x="695" y="222" width="351" height="640" key="RollbackChangesDialog/72.27.1608.1023@72.27.1608.1023" timestamp="1605191013627" />
     <state x="788" y="251" width="321" height="640" key="RollbackChangesDialog/72.27.1848.1173@72.27.1848.1173" timestamp="1605683444041" />
-    <state x="531" y="310" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1605636789234">
+    <state x="531" y="310" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1605802367339">
       <screen x="72" y="27" width="1848" height="1173" />
     </state>
     <state x="471" y="274" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1608.1023@72.27.1608.1023" timestamp="1605204143944" />
-    <state x="531" y="310" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1173@72.27.1848.1173" timestamp="1605636789234" />
+    <state x="531" y="310" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1173@72.27.1848.1173" timestamp="1605802367339" />
     <state x="777" y="528" width="428" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605691077137">
       <screen x="72" y="27" width="1848" height="1173" />
     </state>

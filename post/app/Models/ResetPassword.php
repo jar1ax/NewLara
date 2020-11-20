@@ -4,12 +4,10 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Laravel\Passport\HasApiTokens;
-use App\Mail\ResetPasswordMail;
 
 class ResetPassword extends Model
 {
-    use HasApiTokens, HasFactory;
+    use  HasFactory;
 
     protected $fillable = [
         'user_id',
@@ -24,10 +22,7 @@ class ResetPassword extends Model
     protected $hidden = [
 
     ];
-//    public function SendResetPassword()
-//    {
-//        $this->mail
-//    }
+
     public function user()
     {
         $this->belongsTo('App\Models\User');

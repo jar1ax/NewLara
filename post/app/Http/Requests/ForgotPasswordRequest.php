@@ -13,7 +13,7 @@ class ForgotPasswordRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,7 @@ class ForgotPasswordRequest extends FormRequest
     public function rules()
     {
         return [
-            'required|email|exists:App\Model\User,email',
+            'email'=>'required|email|exists:users,email',
         ];
     }
 }
