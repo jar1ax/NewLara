@@ -91,11 +91,15 @@ class MailTest extends TestCase
             'password'=> 7777777
         ];
         $this->assertTrue($resetPassword);
+
         $old_password= $user->password;
         $user->password = bcrypt($data['password']);
         $user->save();
+
         $this->assertNotEquals($old_password,$user->password);
+
         $resetPassword->delete();
+
         $this->assertDatabaseMissing('reset_passwords', ['user_id' => $user->id]);
     }
 }
