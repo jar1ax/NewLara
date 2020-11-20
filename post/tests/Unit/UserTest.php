@@ -2,19 +2,19 @@
 
 namespace Tests\Unit;
 
+use App\Mail\ResetPasswordMail;
+use App\Models\User;
 use App\Services\UserService;
 use DateTime;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
 use Laravel\Passport\ClientRepository;
 use Tests\TestCase;
-use Illuminate\Testing\TestResponse;
 
 class UserTest extends TestCase
 {
-
-
     use RefreshDatabase;
     use DatabaseMigrations;
 
@@ -24,11 +24,6 @@ class UserTest extends TestCase
     public function setUp():void
     {
         parent::setUp();
-        $this->userService = $this->app->make(UserService::class);
-    }
-
-    public function testIt_tests_create_method()
-    {
         /**
          *  Added Laravel/Passport client token generation code,
          * which i found at laracast.com
@@ -43,24 +38,36 @@ class UserTest extends TestCase
             'created_at' => new DateTime,
             'updated_at' => new DateTime,
         ]);
+        $this->userService = $this->app->make(UserService::class);
+    }
 
-        $data = [
-            'name' => 'John Doe',
-            'email'=>'onetest211223@tes.com',
-            'password'=>bcrypt($password='123456'),
-            'password_confirmation'=>'123456'
-        ];
+    public function testIt_tests_create_method()
+    {
+        $user=User::factory()->create();
 
-        $user=$this->userService->createUser($data);
         $this->assertNotEmpty($user);
-        $this->assertInstanceOf(UserService::class,$this->userService);
-        $this->assertDatabaseHas('users',['email'=>'onetest211223@tes.com']);
+        $this->assertInstanceOf(User::class,$user,);
+        $this->assertDatabaseHas('users',['email'=>$user->email]);
 
         $response = $this->post('api/users/login', [
             'email' => $user->email,
-            'password'=>$user->password
+            'password' => $user->password
         ]);
 
         $response->assertOk();
+    }
+    public function mail_sent_test()
+    {
+        $user=User::factory()->create();
+
+        Mail::fake();
+
+        $response1=$this->post('api/password/email', [
+            'email' => $user->email,
+        ]);
+        $response1->assertOk();
+        Mail::assertSent(ResetPasswordMail::class,2);
+
+        $this->assertDatabaseHas('reset_passwords', ['user_id' => $user->id]);
     }
 }

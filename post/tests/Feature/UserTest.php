@@ -2,6 +2,9 @@
 
 namespace Tests\Feature;
 
+use App\Models\ResetPassword;
+use App\Models\User;
+use Carbon\Carbon;
 use DateTime;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -20,8 +23,9 @@ class UserTest extends TestCase
      *
      * @return void
      */
-    public function testRegister()
+    public function setUp():void
     {
+        parent::setUp();
         /**
          *  Added Laravel/Passport client token generation code,
          * which i found at laracast.com
@@ -36,22 +40,46 @@ class UserTest extends TestCase
             'created_at' => new DateTime,
             'updated_at' => new DateTime,
         ]);
-
-        $data = [
-            'name' => 'JohnDoe',
-            'email'=>'onetestaq1121@test.com',
-            'password'=>'123456',
-            'password_confirmation'=>'123456'
+    }
+    public function testRegister()
+    {
+        $data=[
+            'name'=>'Ilon',
+            'email'=>'test@test.com',
+            'password'=>'777777',
+            'password_confirmation'=>'777777',
         ];
 
         $response = $this->json('POST','api/users', $data)->assertStatus(201);
         $response->assertJsonStructure(['token']);
 
         $response = $this->post('api/users/login', [
-            'email' => 'onetestaq1121@test.com',
-            'password'=>'123456'
-        ])->assertOk();
+            'email' => $data['email'],
+            'password'=>$data['password'] ,
+        ]);
+
         $this->assertAuthenticated();
+    }
+    public function reset_password_test()
+    {
+        $user=User::factory()->create();
+
+        $resetPassword = ResetPassword::create([
+            'user_id' => $user->id,
+            'created_at'=> Carbon::now(),
+            'updated_at'=> Carbon::now(),
+            'token'=>md5($user->email.Carbon::now()),
+        ]);
+        $data=[
+            'password' => '7777777',
+            'token' => $resetPassword->token
+        ];
+
+        $response1=$this->post('api/password/reset', [
+            'token' => $resetPassword->token,
+            'password' => $data['password'],
+            'password_confirmation' => $data['password']
+        ])->assertOk();
     }
 }
 

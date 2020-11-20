@@ -10,9 +10,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dde6b895-bd54-43df-9d5f-7262370438b8" name="Default Changelist" comment="MailTest works fine. Added whitespaces">
+    <list default="true" id="dde6b895-bd54-43df-9d5f-7262370438b8" name="Default Changelist" comment="method mail_sent_test changed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/tests/Unit/MailTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/tests/Unit/MailTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/tests/Feature/UserTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/tests/Feature/UserTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/tests/Unit/MailTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/tests/Unit/UserTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/tests/Unit/UserTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +200,7 @@
       <workItem from="1605770988439" duration="23747000" />
       <workItem from="1605810992450" duration="2876000" />
       <workItem from="1605856094578" duration="5761000" />
-      <workItem from="1605863128221" duration="9123000" />
+      <workItem from="1605863128221" duration="16459000" />
     </task>
     <task id="LOCAL-00001" summary="token(my way(w/o using $tokenObject))">
       <created>1605195032535</created>
@@ -325,7 +328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605874718643</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="method mail_sent_test changed">
+      <created>1605879447775</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1605879447775</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,18 +368,19 @@
     <MESSAGE value="Email to user and reset password works, whitespaces cleaned" />
     <MESSAGE value="MailTest works fine." />
     <MESSAGE value="MailTest works fine. Added whitespaces" />
-    <option name="LAST_COMMIT_MESSAGE" value="MailTest works fine. Added whitespaces" />
+    <MESSAGE value="method mail_sent_test changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="method mail_sent_test changed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="699" y="184" width="574" height="874" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605796289876">
       <screen x="72" y="27" width="1848" height="1173" />
     </state>
     <state x="699" y="184" width="574" height="874" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/72.27.1848.1173@72.27.1848.1173" timestamp="1605796289876" />
-    <state x="689" y="335" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605871599188">
+    <state x="689" y="335" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605885661171">
       <screen x="72" y="27" width="1848" height="1173" />
     </state>
     <state x="609" y="296" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/72.27.1608.1023@72.27.1608.1023" timestamp="1605259799213" />
-    <state x="689" y="335" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/72.27.1848.1173@72.27.1848.1173" timestamp="1605871599188" />
+    <state x="689" y="335" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/72.27.1848.1173@72.27.1848.1173" timestamp="1605885661171" />
     <state x="630" y="258" width="481" height="568" key="NewPhpClassDialog" timestamp="1605203987297">
       <screen x="72" y="27" width="1608" height="1023" />
     </state>
@@ -383,11 +394,11 @@
     </state>
     <state x="695" y="222" width="351" height="640" key="RollbackChangesDialog/72.27.1608.1023@72.27.1608.1023" timestamp="1605191013627" />
     <state x="788" y="251" width="321" height="640" key="RollbackChangesDialog/72.27.1848.1173@72.27.1848.1173" timestamp="1605683444041" />
-    <state x="531" y="310" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1605874726179">
+    <state x="531" y="310" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1605879516958">
       <screen x="72" y="27" width="1848" height="1173" />
     </state>
     <state x="471" y="274" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1608.1023@72.27.1608.1023" timestamp="1605204143944" />
-    <state x="531" y="310" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1173@72.27.1848.1173" timestamp="1605874726179" />
+    <state x="531" y="310" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1173@72.27.1848.1173" timestamp="1605879516958" />
     <state x="777" y="528" width="428" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605691077137">
       <screen x="72" y="27" width="1848" height="1173" />
     </state>
