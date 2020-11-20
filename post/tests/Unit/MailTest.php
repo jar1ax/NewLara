@@ -68,18 +68,13 @@ class MailTest extends TestCase
 
     public function mail_sent_test($user)
     {
+        Mail::fake();
+
         $response1=$this->post('api/password/email', [
             'email' => $user->email,
         ]);
         $response1->assertOk();
-        Mail::fake();
-        Mail::assertNothingSent();
-        Mail::assertSent(ResetPasswordMail::class,function ($mail) use($user)
-        {
-            $mail->build();
-            $mail->with(['token'=>$mail->token]);
-            return $mail->hasTo($user->email);
-        });
+        Mail::assertSent(ResetPasswordMail::class,2);
 
         $this->assertDatabaseHas('reset_passwords', ['user_id' => $user->id]);
     }
