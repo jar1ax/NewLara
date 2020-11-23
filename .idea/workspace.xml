@@ -10,12 +10,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dde6b895-bd54-43df-9d5f-7262370438b8" name="Default Changelist" comment="method mail_sent_test changed">
+    <list default="true" id="dde6b895-bd54-43df-9d5f-7262370438b8" name="Default Changelist" comment="2 tests woking fine , whitespaces cleaned">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/tests/Feature/UserTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/tests/Feature/UserTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/tests/Unit/MailTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/tests/Unit/UserTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/tests/Unit/UserTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/app/Http/Controllers/ResetPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/app/Http/Controllers/ResetPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/app/Services/UserService.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/app/Services/UserService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +201,8 @@
       <workItem from="1605770988439" duration="23747000" />
       <workItem from="1605810992450" duration="2876000" />
       <workItem from="1605856094578" duration="5761000" />
-      <workItem from="1605863128221" duration="16459000" />
+      <workItem from="1605863128221" duration="16879000" />
+      <workItem from="1606115579218" duration="17415000" />
     </task>
     <task id="LOCAL-00001" summary="token(my way(w/o using $tokenObject))">
       <created>1605195032535</created>
@@ -335,7 +337,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605879447775</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="2 tests woking fine , whitespaces cleaned">
+      <created>1605887868001</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1605887868001</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,7 +378,8 @@
     <MESSAGE value="MailTest works fine." />
     <MESSAGE value="MailTest works fine. Added whitespaces" />
     <MESSAGE value="method mail_sent_test changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="method mail_sent_test changed" />
+    <MESSAGE value="2 tests woking fine , whitespaces cleaned" />
+    <option name="LAST_COMMIT_MESSAGE" value="2 tests woking fine , whitespaces cleaned" />
   </component>
   <component name="WindowStateProjectService">
     <state x="699" y="184" width="574" height="874" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605796289876">
@@ -381,6 +391,10 @@
     </state>
     <state x="609" y="296" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/72.27.1608.1023@72.27.1608.1023" timestamp="1605259799213" />
     <state x="689" y="335" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/72.27.1848.1173@72.27.1848.1173" timestamp="1605885661171" />
+    <state x="252" y="129" width="1478" height="975" key="MergeDialog" timestamp="1606117719384">
+      <screen x="72" y="27" width="1848" height="1173" />
+    </state>
+    <state x="252" y="129" width="1478" height="975" key="MergeDialog/72.27.1848.1173@72.27.1848.1173" timestamp="1606117719384" />
     <state x="630" y="258" width="481" height="568" key="NewPhpClassDialog" timestamp="1605203987297">
       <screen x="72" y="27" width="1608" height="1023" />
     </state>
@@ -394,19 +408,19 @@
     </state>
     <state x="695" y="222" width="351" height="640" key="RollbackChangesDialog/72.27.1608.1023@72.27.1608.1023" timestamp="1605191013627" />
     <state x="788" y="251" width="321" height="640" key="RollbackChangesDialog/72.27.1848.1173@72.27.1848.1173" timestamp="1605683444041" />
-    <state x="531" y="310" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1605879516958">
+    <state x="531" y="310" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1605888119810">
       <screen x="72" y="27" width="1848" height="1173" />
     </state>
     <state x="471" y="274" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1608.1023@72.27.1608.1023" timestamp="1605204143944" />
-    <state x="531" y="310" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1173@72.27.1848.1173" timestamp="1605879516958" />
-    <state x="777" y="528" width="428" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605691077137">
+    <state x="531" y="310" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1173@72.27.1848.1173" timestamp="1605888119810" />
+    <state x="777" y="528" width="428" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606117705541">
       <screen x="72" y="27" width="1848" height="1173" />
     </state>
-    <state x="777" y="528" width="428" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/72.27.1848.1173@72.27.1848.1173" timestamp="1605691077137" />
-    <state x="721" y="307" width="539" height="619" key="git4idea.branch.GitSmartOperationDialog" timestamp="1605683256237">
+    <state x="777" y="528" width="428" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/72.27.1848.1173@72.27.1848.1173" timestamp="1606117705541" />
+    <state x="721" y="307" width="539" height="619" key="git4idea.branch.GitSmartOperationDialog" timestamp="1606117113664">
       <screen x="72" y="27" width="1848" height="1173" />
     </state>
-    <state x="721" y="307" width="539" height="619" key="git4idea.branch.GitSmartOperationDialog/72.27.1848.1173@72.27.1848.1173" timestamp="1605683256237" />
+    <state x="721" y="307" width="539" height="619" key="git4idea.branch.GitSmartOperationDialog/72.27.1848.1173@72.27.1848.1173" timestamp="1606117113664" />
     <state x="609" y="284" width="773" height="778" key="search.everywhere.popup" timestamp="1605796028058">
       <screen x="72" y="27" width="1848" height="1173" />
     </state>

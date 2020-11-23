@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\UserUpdateRequest;
+use App\Models\User;
 use App\Services\UserService;
 use Illuminate\Http\Request;
+//use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
@@ -38,4 +41,12 @@ class UserController extends Controller
             return response()->json(['token' => $token], 200);
         }
     }
+    public function update(UserUpdateRequest $request)
+    {
+
+        $update = $this->userService->updateUser($request);
+
+        return $update;
+    }
 }
+
