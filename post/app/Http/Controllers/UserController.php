@@ -40,6 +40,7 @@ class UserController extends Controller
             return response()->json(['token' => $token], 200);
         }
     }
+
     public function update(UserUpdateRequest $request,User $user)
     {
         $authUser = $request->user();
@@ -49,10 +50,10 @@ class UserController extends Controller
 
             $this->userService->updateUser($request->all(),$user->id);
 
-            return response()->json(['message'=>'User data has been updated!']);
+            return response()->json(['message' => 'User data has been updated!']);
         }
 
-        return response()->json(['message'=>'User data hasn\'t been updated!']);
+        return response()->json(['message' => 'User data hasn\'t been updated!']);
     }
 }
 

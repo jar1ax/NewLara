@@ -87,13 +87,15 @@ class UserTest extends TestCase
         $user=User::factory()->create();
         $data= [
             'id' => $user->id,
-            'email'=>'test@test.com',
-            'name'=>'Ben'
+            'email' => 'test@test.com',
+            'name' => 'Ben'
         ];
 
         Passport::actingAs($user);
         $this->put('api/users/'.$data['id'],$data)->assertOk();
 
+        $user->refresh();
+        $this->assertDatabaseHas('users', ['id' => $user->id,'email' => $data['email']]);
     }
 }
 
