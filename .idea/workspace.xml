@@ -10,8 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dde6b895-bd54-43df-9d5f-7262370438b8" name="Default Changelist" comment="added new assertion, whitespaces added few more)">
-      <change beforePath="$PROJECT_DIR$/post/tests/Unit/UserTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/tests/Unit/UserTest.php" afterDir="false" />
+    <list default="true" id="dde6b895-bd54-43df-9d5f-7262370438b8" name="Default Changelist" comment="ActingAs removed in Unit test">
+      <change beforePath="$PROJECT_DIR$/post/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/tests/Feature/UserTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/tests/Feature/UserTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +200,7 @@
       <workItem from="1605856094578" duration="5761000" />
       <workItem from="1605863128221" duration="16879000" />
       <workItem from="1606115579218" duration="24367000" />
-      <workItem from="1606202079672" duration="21300000" />
+      <workItem from="1606202079672" duration="21948000" />
     </task>
     <task id="LOCAL-00001" summary="token(my way(w/o using $tokenObject))">
       <created>1605195032535</created>
@@ -404,7 +405,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606228899546</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="ActingAs removed in Unit test">
+      <created>1606229168087</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1606229168087</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -446,7 +454,8 @@
     <MESSAGE value="all done, tests working" />
     <MESSAGE value="added new assertion, whitespaces added" />
     <MESSAGE value="added new assertion, whitespaces added few more)" />
-    <option name="LAST_COMMIT_MESSAGE" value="added new assertion, whitespaces added few more)" />
+    <MESSAGE value="ActingAs removed in Unit test" />
+    <option name="LAST_COMMIT_MESSAGE" value="ActingAs removed in Unit test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="591" y="275" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606226970572">
@@ -483,11 +492,11 @@
     </state>
     <state x="695" y="222" width="351" height="640" key="RollbackChangesDialog/72.27.1608.1023@72.27.1608.1023" timestamp="1605191013627" />
     <state x="788" y="251" width="321" height="640" key="RollbackChangesDialog/72.27.1848.1173@72.27.1848.1173" timestamp="1605683444041" />
-    <state x="531" y="310" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1606228909082">
+    <state x="531" y="310" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1606229186604">
       <screen x="72" y="27" width="1848" height="1173" />
     </state>
     <state x="471" y="274" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1608.1023@72.27.1608.1023" timestamp="1605204143944" />
-    <state x="531" y="310" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1173@72.27.1848.1173" timestamp="1606228909082" />
+    <state x="531" y="310" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1173@72.27.1848.1173" timestamp="1606229186604" />
     <state x="777" y="528" width="428" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606117705541">
       <screen x="72" y="27" width="1848" height="1173" />
     </state>

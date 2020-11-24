@@ -85,6 +85,7 @@ class UserTest extends TestCase
     public function testUser_update_test()
     {
         $user=User::factory()->create();
+
         $data= [
             'id' => $user->id,
             'email' => 'test@test.com',

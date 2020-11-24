@@ -47,7 +47,6 @@ class UserController extends Controller
 
         if ($authUser->can('update',$user))
         {
-
             $this->userService->updateUser($request->all(),$user->id);
 
             return response()->json(['message' => 'User data has been updated!']);
