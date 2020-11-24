@@ -10,10 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dde6b895-bd54-43df-9d5f-7262370438b8" name="Default Changelist" comment="all done, tests working">
-      <change beforePath="$PROJECT_DIR$/post/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/app/Services/UserService.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/app/Services/UserService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/tests/Feature/UserTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/tests/Feature/UserTest.php" afterDir="false" />
+    <list default="true" id="dde6b895-bd54-43df-9d5f-7262370438b8" name="Default Changelist" comment="added new assertion, whitespaces added few more)">
       <change beforePath="$PROJECT_DIR$/post/tests/Unit/UserTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/tests/Unit/UserTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -202,7 +199,7 @@
       <workItem from="1605856094578" duration="5761000" />
       <workItem from="1605863128221" duration="16879000" />
       <workItem from="1606115579218" duration="24367000" />
-      <workItem from="1606202079672" duration="20828000" />
+      <workItem from="1606202079672" duration="21300000" />
     </task>
     <task id="LOCAL-00001" summary="token(my way(w/o using $tokenObject))">
       <created>1605195032535</created>
@@ -386,7 +383,28 @@
       <option name="project" value="LOCAL" />
       <updated>1606227903614</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="added new assertion, whitespaces added">
+      <created>1606228730907</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1606228730907</updated>
+    </task>
+    <task id="LOCAL-00028" summary="added new assertion, whitespaces added">
+      <created>1606228832935</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1606228832935</updated>
+    </task>
+    <task id="LOCAL-00029" summary="added new assertion, whitespaces added few more)">
+      <created>1606228899546</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1606228899546</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -426,7 +444,9 @@
     <MESSAGE value="Now for sure: Update is working via Healthy Man's Service.&#10;Tests working fine. Added additional whitespaces." />
     <MESSAGE value="updateUser(): int added" />
     <MESSAGE value="all done, tests working" />
-    <option name="LAST_COMMIT_MESSAGE" value="all done, tests working" />
+    <MESSAGE value="added new assertion, whitespaces added" />
+    <MESSAGE value="added new assertion, whitespaces added few more)" />
+    <option name="LAST_COMMIT_MESSAGE" value="added new assertion, whitespaces added few more)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="591" y="275" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606226970572">
@@ -446,6 +466,10 @@
       <screen x="72" y="27" width="1848" height="1173" />
     </state>
     <state x="252" y="129" width="1478" height="975" key="MergeDialog/72.27.1848.1173@72.27.1848.1173" timestamp="1606117719384" />
+    <state x="627" y="376" width="728" height="482" key="MultipleFileMergeDialog" timestamp="1606228938558">
+      <screen x="72" y="27" width="1848" height="1173" />
+    </state>
+    <state x="627" y="376" width="728" height="482" key="MultipleFileMergeDialog/72.27.1848.1173@72.27.1848.1173" timestamp="1606228938558" />
     <state x="630" y="258" width="481" height="568" key="NewPhpClassDialog" timestamp="1605203987297">
       <screen x="72" y="27" width="1608" height="1023" />
     </state>
@@ -459,11 +483,11 @@
     </state>
     <state x="695" y="222" width="351" height="640" key="RollbackChangesDialog/72.27.1608.1023@72.27.1608.1023" timestamp="1605191013627" />
     <state x="788" y="251" width="321" height="640" key="RollbackChangesDialog/72.27.1848.1173@72.27.1848.1173" timestamp="1605683444041" />
-    <state x="531" y="310" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1606227914871">
+    <state x="531" y="310" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1606228909082">
       <screen x="72" y="27" width="1848" height="1173" />
     </state>
     <state x="471" y="274" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1608.1023@72.27.1608.1023" timestamp="1605204143944" />
-    <state x="531" y="310" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1173@72.27.1848.1173" timestamp="1606227914871" />
+    <state x="531" y="310" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1173@72.27.1848.1173" timestamp="1606228909082" />
     <state x="777" y="528" width="428" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606117705541">
       <screen x="72" y="27" width="1848" height="1173" />
     </state>

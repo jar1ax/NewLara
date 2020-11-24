@@ -80,8 +80,6 @@ class UserTest extends TestCase
             'name' => 'Ben'
         ];
 
-        Passport::actingAs($user);
-
         $this->userService->updateUser($data,$user->id);
 
         $this->assertDatabaseHas('users', ['id' => $user->id,'email' => $data['email']]);
