@@ -10,12 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dde6b895-bd54-43df-9d5f-7262370438b8" name="Default Changelist" comment="method mail_sent_test changed">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/database/factories/UserFactory.php" afterDir="false" />
+    <list default="true" id="dde6b895-bd54-43df-9d5f-7262370438b8" name="Default Changelist" comment="ActingAs removed in Unit test">
+      <change beforePath="$PROJECT_DIR$/post/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/app/Http/Controllers/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/post/tests/Feature/UserTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/tests/Feature/UserTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/tests/Unit/MailTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/tests/Unit/UserTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/tests/Unit/UserTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,6 +168,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -200,7 +198,9 @@
       <workItem from="1605770988439" duration="23747000" />
       <workItem from="1605810992450" duration="2876000" />
       <workItem from="1605856094578" duration="5761000" />
-      <workItem from="1605863128221" duration="16459000" />
+      <workItem from="1605863128221" duration="16879000" />
+      <workItem from="1606115579218" duration="24367000" />
+      <workItem from="1606202079672" duration="21948000" />
     </task>
     <task id="LOCAL-00001" summary="token(my way(w/o using $tokenObject))">
       <created>1605195032535</created>
@@ -335,7 +335,84 @@
       <option name="project" value="LOCAL" />
       <updated>1605879447775</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="2 tests woking fine , whitespaces cleaned">
+      <created>1605887868001</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1605887868001</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Update is working fine and login is in DI(no tests yet)">
+      <created>1606140015173</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1606140015183</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Update is working fine and login is in DI(no tests yet)">
+      <created>1606140103096</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1606140103096</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Update is working via Healthy Man's Service.&#10;Tests working fine.">
+      <created>1606210522998</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1606210522998</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Now for sure: Update is working via Healthy Man's Service.&#10;Tests working fine. Added additional whitespaces.">
+      <created>1606217172274</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1606217172284</updated>
+    </task>
+    <task id="LOCAL-00025" summary="updateUser(): int added">
+      <created>1606217707011</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1606217707011</updated>
+    </task>
+    <task id="LOCAL-00026" summary="all done, tests working">
+      <created>1606227903614</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1606227903614</updated>
+    </task>
+    <task id="LOCAL-00027" summary="added new assertion, whitespaces added">
+      <created>1606228730907</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1606228730907</updated>
+    </task>
+    <task id="LOCAL-00028" summary="added new assertion, whitespaces added">
+      <created>1606228832935</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1606228832935</updated>
+    </task>
+    <task id="LOCAL-00029" summary="added new assertion, whitespaces added few more)">
+      <created>1606228899546</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1606228899546</updated>
+    </task>
+    <task id="LOCAL-00030" summary="ActingAs removed in Unit test">
+      <created>1606229168087</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1606229168087</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,18 +446,39 @@
     <MESSAGE value="MailTest works fine." />
     <MESSAGE value="MailTest works fine. Added whitespaces" />
     <MESSAGE value="method mail_sent_test changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="method mail_sent_test changed" />
+    <MESSAGE value="2 tests woking fine , whitespaces cleaned" />
+    <MESSAGE value="Update is working fine and login is in DI(no tests yet)" />
+    <MESSAGE value="Update is working via Healthy Man's Service.&#10;Tests working fine." />
+    <MESSAGE value="Now for sure: Update is working via Healthy Man's Service.&#10;Tests working fine. Added additional whitespaces." />
+    <MESSAGE value="updateUser(): int added" />
+    <MESSAGE value="all done, tests working" />
+    <MESSAGE value="added new assertion, whitespaces added" />
+    <MESSAGE value="added new assertion, whitespaces added few more)" />
+    <MESSAGE value="ActingAs removed in Unit test" />
+    <option name="LAST_COMMIT_MESSAGE" value="ActingAs removed in Unit test" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="591" y="275" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606226970572">
+      <screen x="72" y="27" width="1848" height="1173" />
+    </state>
+    <state x="591" y="275" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1173@72.27.1848.1173" timestamp="1606226970572" />
     <state x="699" y="184" width="574" height="874" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605796289876">
       <screen x="72" y="27" width="1848" height="1173" />
     </state>
     <state x="699" y="184" width="574" height="874" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/72.27.1848.1173@72.27.1848.1173" timestamp="1605796289876" />
-    <state x="689" y="335" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605885661171">
+    <state x="689" y="335" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606209409536">
       <screen x="72" y="27" width="1848" height="1173" />
     </state>
     <state x="609" y="296" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/72.27.1608.1023@72.27.1608.1023" timestamp="1605259799213" />
-    <state x="689" y="335" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/72.27.1848.1173@72.27.1848.1173" timestamp="1605885661171" />
+    <state x="689" y="335" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/72.27.1848.1173@72.27.1848.1173" timestamp="1606209409536" />
+    <state x="252" y="129" width="1478" height="975" key="MergeDialog" timestamp="1606117719384">
+      <screen x="72" y="27" width="1848" height="1173" />
+    </state>
+    <state x="252" y="129" width="1478" height="975" key="MergeDialog/72.27.1848.1173@72.27.1848.1173" timestamp="1606117719384" />
+    <state x="627" y="376" width="728" height="482" key="MultipleFileMergeDialog" timestamp="1606228938558">
+      <screen x="72" y="27" width="1848" height="1173" />
+    </state>
+    <state x="627" y="376" width="728" height="482" key="MultipleFileMergeDialog/72.27.1848.1173@72.27.1848.1173" timestamp="1606228938558" />
     <state x="630" y="258" width="481" height="568" key="NewPhpClassDialog" timestamp="1605203987297">
       <screen x="72" y="27" width="1608" height="1023" />
     </state>
@@ -394,24 +492,24 @@
     </state>
     <state x="695" y="222" width="351" height="640" key="RollbackChangesDialog/72.27.1608.1023@72.27.1608.1023" timestamp="1605191013627" />
     <state x="788" y="251" width="321" height="640" key="RollbackChangesDialog/72.27.1848.1173@72.27.1848.1173" timestamp="1605683444041" />
-    <state x="531" y="310" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1605879516958">
+    <state x="531" y="310" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1606229186604">
       <screen x="72" y="27" width="1848" height="1173" />
     </state>
     <state x="471" y="274" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1608.1023@72.27.1608.1023" timestamp="1605204143944" />
-    <state x="531" y="310" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1173@72.27.1848.1173" timestamp="1605879516958" />
-    <state x="777" y="528" width="428" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605691077137">
+    <state x="531" y="310" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1173@72.27.1848.1173" timestamp="1606229186604" />
+    <state x="777" y="528" width="428" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606117705541">
       <screen x="72" y="27" width="1848" height="1173" />
     </state>
-    <state x="777" y="528" width="428" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/72.27.1848.1173@72.27.1848.1173" timestamp="1605691077137" />
-    <state x="721" y="307" width="539" height="619" key="git4idea.branch.GitSmartOperationDialog" timestamp="1605683256237">
+    <state x="777" y="528" width="428" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/72.27.1848.1173@72.27.1848.1173" timestamp="1606117705541" />
+    <state x="721" y="307" width="539" height="619" key="git4idea.branch.GitSmartOperationDialog" timestamp="1606117113664">
       <screen x="72" y="27" width="1848" height="1173" />
     </state>
-    <state x="721" y="307" width="539" height="619" key="git4idea.branch.GitSmartOperationDialog/72.27.1848.1173@72.27.1848.1173" timestamp="1605683256237" />
-    <state x="609" y="284" width="773" height="778" key="search.everywhere.popup" timestamp="1605796028058">
+    <state x="721" y="307" width="539" height="619" key="git4idea.branch.GitSmartOperationDialog/72.27.1848.1173@72.27.1848.1173" timestamp="1606117113664" />
+    <state x="609" y="284" width="773" height="778" key="search.everywhere.popup" timestamp="1606223400445">
       <screen x="72" y="27" width="1848" height="1173" />
     </state>
     <state x="539" y="251" width="672" height="678" key="search.everywhere.popup/72.27.1608.1023@72.27.1608.1023" timestamp="1605275610119" />
-    <state x="609" y="284" width="773" height="778" key="search.everywhere.popup/72.27.1848.1173@72.27.1848.1173" timestamp="1605796028058" />
+    <state x="609" y="284" width="773" height="778" key="search.everywhere.popup/72.27.1848.1173@72.27.1848.1173" timestamp="1606223400445" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

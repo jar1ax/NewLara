@@ -10,6 +10,7 @@ use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\DB;
 use Laravel\Passport\ClientRepository;
+use Laravel\Passport\Passport;
 use Tests\TestCase;
 
 class UserTest extends TestCase
@@ -80,6 +81,23 @@ class UserTest extends TestCase
             'password' => $data['password'],
             'password_confirmation' => $data['password']
         ])->assertOk();
+    }
+    public function testUser_update_test()
+    {
+        $user=User::factory()->create();
+
+        $data= [
+            'id' => $user->id,
+            'email' => 'test@test.com',
+            'name' => 'Ben'
+        ];
+
+        Passport::actingAs($user);
+        $this->put('api/users/'.$data['id'],$data)->assertOk();
+
+        $user->refresh();
+
+        $this->assertDatabaseHas('users', ['id' => $user->id,'email' => $data['email']]);
     }
 }
 

@@ -46,8 +46,8 @@ class ResetPasswordController extends Controller
         {
             return response()->json(['message' => '1This token is invalid']);
         }
-        if (CArbon::parse($resetPassword->updated_at)->addMinutes(120)->isPast() or
-            CArbon::parse($resetPassword->created_at)->addMinutes(120)->isPast())
+        if (Carbon::parse($resetPassword->updated_at)->addMinutes(120)->isPast() or
+            Carbon::parse($resetPassword->created_at)->addMinutes(120)->isPast())
         {
             $resetPassword->delete();
             return response()->json(['message' => '2This token is invalid']);

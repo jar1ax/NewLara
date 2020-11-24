@@ -11,7 +11,9 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
 use Laravel\Passport\ClientRepository;
+use Laravel\Passport\Passport;
 use Tests\TestCase;
+use function PHPUnit\Framework\assertJson;
 
 class UserTest extends TestCase
 {
@@ -46,7 +48,7 @@ class UserTest extends TestCase
         $user=User::factory()->create();
 
         $this->assertNotEmpty($user);
-        $this->assertInstanceOf(User::class,$user,);
+        $this->assertInstanceOf(User::class,$user);
         $this->assertDatabaseHas('users',['email'=>$user->email]);
 
         $response = $this->post('api/users/login', [
@@ -56,7 +58,7 @@ class UserTest extends TestCase
 
         $response->assertOk();
     }
-    public function mail_sent_test()
+    public function testMail_sent_test()
     {
         $user=User::factory()->create();
 
@@ -66,8 +68,20 @@ class UserTest extends TestCase
             'email' => $user->email,
         ]);
         $response1->assertOk();
-        Mail::assertSent(ResetPasswordMail::class,2);
+        Mail::assertSent(ResetPasswordMail::class,1);
 
         $this->assertDatabaseHas('reset_passwords', ['user_id' => $user->id]);
+    }
+    public function testUser_update_test()
+    {
+        $user=User::factory()->create();
+        $data= [
+            'email' => 'test@test.com',
+            'name' => 'Ben'
+        ];
+
+        $this->userService->updateUser($data,$user->id);
+
+        $this->assertDatabaseHas('users', ['id' => $user->id,'email' => $data['email']]);
     }
 }

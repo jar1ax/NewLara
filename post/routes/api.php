@@ -21,3 +21,6 @@ Route::post('password/reset','App\Http\Controllers\ResetPasswordController@reset
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+Route::middleware('auth:api')->group(function (){
+    Route::put('users/{user}','App\Http\Controllers\UserController@update');
+});
