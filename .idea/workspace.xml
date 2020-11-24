@@ -10,12 +10,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dde6b895-bd54-43df-9d5f-7262370438b8" name="Default Changelist" comment="Update is working fine and login is in DI(no tests yet)">
+    <list default="true" id="dde6b895-bd54-43df-9d5f-7262370438b8" name="Default Changelist" comment="Update is working via Healthy Man's Service.&#10;Tests working fine.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/post/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/app/Http/Requests/ForgotPasswordRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/app/Http/Requests/ForgotPasswordRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/app/Http/Requests/ResetPasswordRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/app/Http/Requests/ResetPasswordRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/app/Http/Requests/UserUpdateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/app/Http/Requests/UserUpdateRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/post/app/Services/UserService.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/app/Services/UserService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/tests/Feature/UserTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/tests/Feature/UserTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/tests/Unit/UserTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/tests/Unit/UserTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +203,7 @@
       <workItem from="1605856094578" duration="5761000" />
       <workItem from="1605863128221" duration="16879000" />
       <workItem from="1606115579218" duration="24367000" />
-      <workItem from="1606202079672" duration="8259000" />
+      <workItem from="1606202079672" duration="9976000" />
     </task>
     <task id="LOCAL-00001" summary="token(my way(w/o using $tokenObject))">
       <created>1605195032535</created>
@@ -358,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606140103096</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Update is working via Healthy Man's Service.&#10;Tests working fine.">
+      <created>1606210522998</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1606210522998</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,7 +402,8 @@
     <MESSAGE value="method mail_sent_test changed" />
     <MESSAGE value="2 tests woking fine , whitespaces cleaned" />
     <MESSAGE value="Update is working fine and login is in DI(no tests yet)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update is working fine and login is in DI(no tests yet)" />
+    <MESSAGE value="Update is working via Healthy Man's Service.&#10;Tests working fine." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update is working via Healthy Man's Service.&#10;Tests working fine." />
   </component>
   <component name="WindowStateProjectService">
     <state x="699" y="184" width="574" height="874" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605796289876">
@@ -423,11 +432,11 @@
     </state>
     <state x="695" y="222" width="351" height="640" key="RollbackChangesDialog/72.27.1608.1023@72.27.1608.1023" timestamp="1605191013627" />
     <state x="788" y="251" width="321" height="640" key="RollbackChangesDialog/72.27.1848.1173@72.27.1848.1173" timestamp="1605683444041" />
-    <state x="531" y="310" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1606140113236">
+    <state x="531" y="310" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1606210534690">
       <screen x="72" y="27" width="1848" height="1173" />
     </state>
     <state x="471" y="274" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1608.1023@72.27.1608.1023" timestamp="1605204143944" />
-    <state x="531" y="310" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1173@72.27.1848.1173" timestamp="1606140113236" />
+    <state x="531" y="310" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1173@72.27.1848.1173" timestamp="1606210534690" />
     <state x="777" y="528" width="428" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606117705541">
       <screen x="72" y="27" width="1848" height="1173" />
     </state>

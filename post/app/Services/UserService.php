@@ -13,15 +13,6 @@ class UserService
     }
     public function updateUser(array $data)
     {
-        $authenticated_user= \Auth::user();
-        $user=User::findOrfail($data['id']);
-
-        if ($authenticated_user->can('update',$user))
-        {
-            $user->update($data);
-
-            return response()->json(['message'=>'User data has been updated!']);
-        }
-        return response()->json(['message'=>'Error. User data hasn\'t been updated!']);
+           return User::where('id',$data['id'])->update($data);
     }
 }

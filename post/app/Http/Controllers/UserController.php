@@ -42,9 +42,18 @@ class UserController extends Controller
     }
     public function update(UserUpdateRequest $request)
     {
-        $update = $this->userService->updateUser($request->all());
+        $authenticated_user= \Auth::user();
+        $user=User::findOrfail($request->id);
 
-        return $update;
+        if ($authenticated_user->can('update',$user))
+        {
+            $this->userService->updateUser($request->all());
+
+            return response()->json(['message'=>'User data has been updated!']);
+        }
+
+        return response()->json(['message'=>'User data hasn\'t been updated!']);
+
     }
 }
 
