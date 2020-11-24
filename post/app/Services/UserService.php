@@ -4,6 +4,7 @@ namespace App\Services;
 
 use App\Http\Requests\UserUpdateRequest;
 use App\Models\User;
+use phpDocumentor\Reflection\Types\Boolean;
 
 class UserService
 {
@@ -11,7 +12,7 @@ class UserService
     {
         return User::create($data);
     }
-    public function updateUser(array $data)
+    public function updateUser(array $data): int
     {
            return User::where('id',$data['id'])->update($data);
     }
