@@ -11,14 +11,14 @@ class UserService
     {
         return User::create($data);
     }
-    public function updateUser(UserUpdateRequest $request)
+    public function updateUser(array $data)
     {
         $authenticated_user= \Auth::user();
+        $user=User::findOrfail($data['id']);
 
-        $user=User::findOrfail($request->id);
         if ($authenticated_user->can('update',$user))
         {
-            $user->update($request->all());
+            $user->update($data);
 
             return response()->json(['message'=>'User data has been updated!']);
         }

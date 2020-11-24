@@ -6,7 +6,6 @@ use App\Http\Requests\UserUpdateRequest;
 use App\Models\User;
 use App\Services\UserService;
 use Illuminate\Http\Request;
-//use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
@@ -43,8 +42,7 @@ class UserController extends Controller
     }
     public function update(UserUpdateRequest $request)
     {
-
-        $update = $this->userService->updateUser($request);
+        $update = $this->userService->updateUser($request->all());
 
         return $update;
     }
