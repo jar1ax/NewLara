@@ -92,7 +92,7 @@ class UserTest extends TestCase
         ];
 
         Passport::actingAs($user);
-        $this->put('api/users/update',$data)->assertOk();
+        $this->put('api/users/'.$data['id'],$data)->assertOk();
 
     }
 }

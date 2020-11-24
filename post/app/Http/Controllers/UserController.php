@@ -40,20 +40,19 @@ class UserController extends Controller
             return response()->json(['token' => $token], 200);
         }
     }
-    public function update(UserUpdateRequest $request)
+    public function update(UserUpdateRequest $request,User $user)
     {
-        $authenticated_user= \Auth::user();
-        $user=User::findOrfail($request->id);
+        $authUser = $request->user();
 
-        if ($authenticated_user->can('update',$user))
+        if ($authUser->can('update',$user))
         {
-            $this->userService->updateUser($request->all());
+
+            $this->userService->updateUser($request->all(),$user->id);
 
             return response()->json(['message'=>'User data has been updated!']);
         }
 
         return response()->json(['message'=>'User data hasn\'t been updated!']);
-
     }
 }
 
