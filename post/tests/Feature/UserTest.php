@@ -95,6 +95,7 @@ class UserTest extends TestCase
         $this->put('api/users/'.$data['id'],$data)->assertOk();
 
         $user->refresh();
+
         $this->assertDatabaseHas('users', ['id' => $user->id,'email' => $data['email']]);
     }
 }
