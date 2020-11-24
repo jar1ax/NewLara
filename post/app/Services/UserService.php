@@ -14,6 +14,6 @@ class UserService
     }
     public function updateUser(array $data,int $id): void
     {
-           User::where('id',$id)->update($data);
+        User::where('id',$id)->update($data);
     }
 }
