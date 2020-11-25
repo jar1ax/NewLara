@@ -2,6 +2,9 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Resources\UserCollection;
+use App\Models\User;
+use App\Http\Resources\UserResource;
 
 /*
 |--------------------------------------------------------------------------

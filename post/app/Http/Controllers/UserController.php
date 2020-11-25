@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\UserUpdateRequest;
+use App\Http\Resources\UserResource;
 use App\Models\User;
 use App\Services\UserService;
 use Illuminate\Http\Request;
@@ -14,6 +15,7 @@ class UserController extends Controller
     public function __construct(UserService $userService)
     {
         $this->userService = $userService;
+        $this->middleware('auth:api')->only('getUserData');
     }
 
     public function register(Request $request)
@@ -68,10 +70,9 @@ class UserController extends Controller
 
         if ($authUser->can('update',$user))
         {
-            return $user;
+            return new UserResource($user);
         }
 
         return response()->json(['message' => 'Permission denied'],403);
     }
 }
-

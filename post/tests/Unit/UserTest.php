@@ -92,7 +92,7 @@ class UserTest extends TestCase
 
         Passport::actingAs($user);
         $this->get('api/users/'.$user->id)->assertOk()
-            ->assertJsonStructure([
+            ->assertJsonStructure(['data' =>
                 [
                     'id',
                     'name',
