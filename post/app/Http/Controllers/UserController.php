@@ -15,7 +15,6 @@ class UserController extends Controller
     public function __construct(UserService $userService)
     {
         $this->userService = $userService;
-        $this->middleware('auth:api')->only('getUserData');
     }
 
     public function register(Request $request)
@@ -61,14 +60,14 @@ class UserController extends Controller
     {
         $users = User::all()->pluck('email');
 
-        return response()->json(['users'=>$users],200);
+        return response()->json(['users' => $users],200);
     }
 
     public function getUserData(User $user)
     {
        $authUser = \request()->user();
 
-        if ($authUser->can('update',$user))
+        if ($authUser->can('view',$user))
         {
             return new UserResource($user);
         }
