@@ -102,15 +102,18 @@ class UserTest extends TestCase
 
     public function testGet_all_users()
     {
-        $response=$this->get('api/users/')->assertOk();
+        $user = User::factory()->create();
 
-        $response->assertJsonStructure();
+        Passport::actingAs($user);
+        $response = $this->get('api/users/')->assertOk();
+
+        $response->assertJsonStructure(['users']);
     }
 
     public function testGet_user_data()
     {
-        $user=User::factory()->create();
-        $user2= User::factory()->create();
+        $user = User::factory()->create();
+        $user2 = User::factory()->create();
 
         Passport::actingAs($user);
         $this->get('api/users/'.$user->id)->assertOk();

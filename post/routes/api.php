@@ -2,9 +2,6 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Resources\UserCollection;
-use App\Models\User;
-use App\Http\Resources\UserResource;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,6 +23,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 Route::middleware('auth:api')->group(function (){
     Route::put('users/{user}','App\Http\Controllers\UserController@update');
+    Route::get('users','App\Http\Controllers\UserController@getAllUsers');
     Route::get('users/{user}','App\Http\Controllers\UserController@getUserdata');
 });
-Route::get('users','App\Http\Controllers\UserController@getAllUsers');
