@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\UserUpdateRequest;
+use App\Http\Resources\UserResource;
 use App\Models\User;
 use App\Services\UserService;
 use Illuminate\Http\Request;
@@ -54,5 +55,23 @@ class UserController extends Controller
 
         return response()->json(['message' => 'User data hasn\'t been updated!']);
     }
-}
 
+    public function getAllUsers()
+    {
+        $users = User::all()->pluck('email');
+
+        return response()->json(['users' => $users],200);
+    }
+
+    public function getUserData(User $user)
+    {
+       $authUser = \request()->user();
+
+        if ($authUser->can('view',$user))
+        {
+            return new UserResource($user);
+        }
+
+        return response()->json(['message' => 'Permission denied'],403);
+    }
+}
