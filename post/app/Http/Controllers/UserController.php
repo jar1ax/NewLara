@@ -54,5 +54,31 @@ class UserController extends Controller
 
         return response()->json(['message' => 'User data hasn\'t been updated!']);
     }
+
+    public function getAllUsers()
+    {
+        $users = User::get()->pluck('name','email');
+
+        return response()->json(['Users'=>$users],200);
+    }
+
+    public function getUserData(User $user)
+    {
+       $authUser = \request()->user();
+
+        if ($authUser->can('update',$user))
+        {
+           if (User::where('id',$user->id)->exists())
+           {
+               return response()->json( User::where('id',$user->id)->get(),200);
+           }
+           else
+           {
+               return response()->json(['message' => 'User data hasn\'t been found'],404);
+           }
+        }
+
+        return response()->json(['message' => 'Premission denied'],403);
+    }
 }
 

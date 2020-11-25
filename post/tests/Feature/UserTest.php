@@ -99,5 +99,25 @@ class UserTest extends TestCase
 
         $this->assertDatabaseHas('users', ['id' => $user->id,'email' => $data['email']]);
     }
+
+    public function testGet_all_users()
+    {
+        $response=$this->get('api/users/')->assertOk();
+
+        $response->assertJsonStructure();
+    }
+
+    public function testGet_user_data()
+    {
+        $user=User::factory()->create();
+        $user2= User::factory()->create();
+
+        Passport::actingAs($user);
+        $this->get('api/users/'.$user->id)->assertOk();
+
+        $this->get('api/users/'.rand(4,7))->assertStatus(404);
+
+        $this->get('api/users/'.$user2->id)->assertStatus(403);
+    }
 }
 
