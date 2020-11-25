@@ -57,9 +57,9 @@ class UserController extends Controller
 
     public function getAllUsers()
     {
-        $users = User::get()->pluck('name','email');
+        $users = User::all()->pluck('email');
 
-        return response()->json(['Users'=>$users],200);
+        return response()->json(['users'=>$users],200);
     }
 
     public function getUserData(User $user)
@@ -68,17 +68,10 @@ class UserController extends Controller
 
         if ($authUser->can('update',$user))
         {
-           if (User::where('id',$user->id)->exists())
-           {
-               return response()->json( User::where('id',$user->id)->get(),200);
-           }
-           else
-           {
-               return response()->json(['message' => 'User data hasn\'t been found'],404);
-           }
+            return $user;
         }
 
-        return response()->json(['message' => 'Premission denied'],403);
+        return response()->json(['message' => 'Permission denied'],403);
     }
 }
 
