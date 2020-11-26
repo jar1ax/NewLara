@@ -74,4 +74,24 @@ class UserController extends Controller
 
         return response()->json(['message' => 'Permission denied'],403);
     }
+    public function deleteUser(User $user)
+    {
+        $authUser = \request()->user();
+
+        if ($authUser->can('delete',$user))
+        {
+            if($user)
+            {
+                $authUser->status = User::INACTIVE;
+                $authUser->save();
+
+                return response()->json(['message' => 'Status changed successfully!'],200);
+            }
+            else
+            {
+                return response()->json(['message' => 'Error! User not found'],404);
+            }
+        }
+        return response()->json(['message' => 'Permission denied'],403);
+    }
 }
