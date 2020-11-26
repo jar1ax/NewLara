@@ -10,12 +10,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dde6b895-bd54-43df-9d5f-7262370438b8" name="Default Changelist" comment="All working, refactoring issues resolved2.0">
+    <list default="true" id="dde6b895-bd54-43df-9d5f-7262370438b8" name="Default Changelist" comment="Init commit, Status working, no mail and tests yet">
+      <change afterPath="$PROJECT_DIR$/post/app/Mail/DeleteUserMail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jar1ax.com.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jar1ax.com.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/post/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/app/Policies/UserPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/app/Policies/UserPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/post/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/post/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/config/app.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +33,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="composer.json" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -163,6 +167,12 @@
       <path value="$PROJECT_DIR$/post/vendor/guzzlehttp/psr7" />
       <path value="$PROJECT_DIR$/post/vendor/guzzlehttp/promises" />
       <path value="$PROJECT_DIR$/post/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/post/vendor/barryvdh/laravel-dompdf" />
+      <path value="$PROJECT_DIR$/post/vendor/phenx/php-font-lib" />
+      <path value="$PROJECT_DIR$/post/vendor/sabberworm/php-css-parser" />
+      <path value="$PROJECT_DIR$/post/vendor/phenx/php-svg-lib" />
+      <path value="$PROJECT_DIR$/post/vendor/dompdf/dompdf" />
+      <path value="$PROJECT_DIR$/post/vendor/lcobucci/clock" />
     </include_path>
   </component>
   <component name="ProjectId" id="1k6FryK2oH90h3pNytriBtA4hup" />
@@ -174,8 +184,15 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/post/resources/views" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/post/resources/views" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -205,6 +222,8 @@
       <workItem from="1606115579218" duration="24367000" />
       <workItem from="1606202079672" duration="21948000" />
       <workItem from="1606376100539" duration="13000" />
+      <workItem from="1606389286446" duration="7289000" />
+      <workItem from="1606399685720" duration="2134000" />
     </task>
     <task id="LOCAL-00001" summary="token(my way(w/o using $tokenObject))">
       <created>1605195032535</created>
@@ -416,7 +435,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606229168087</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Init commit, Status working, no mail and tests yet">
+      <created>1606382387272</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1606382387276</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -459,7 +485,8 @@
     <MESSAGE value="added new assertion, whitespaces added" />
     <MESSAGE value="added new assertion, whitespaces added few more)" />
     <MESSAGE value="ActingAs removed in Unit test" />
-    <option name="LAST_COMMIT_MESSAGE" value="ActingAs removed in Unit test" />
+    <MESSAGE value="Init commit, Status working, no mail and tests yet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init commit, Status working, no mail and tests yet" />
   </component>
   <component name="WindowStateProjectService">
     <state x="591" y="275" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606226970572">
@@ -470,11 +497,11 @@
       <screen x="72" y="27" width="1848" height="1173" />
     </state>
     <state x="699" y="184" width="574" height="874" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/72.27.1848.1173@72.27.1848.1173" timestamp="1605796289876" />
-    <state x="689" y="335" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606209409536">
+    <state x="689" y="335" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606392117191">
       <screen x="72" y="27" width="1848" height="1173" />
     </state>
     <state x="609" y="296" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/72.27.1608.1023@72.27.1608.1023" timestamp="1605259799213" />
-    <state x="689" y="335" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/72.27.1848.1173@72.27.1848.1173" timestamp="1606209409536" />
+    <state x="689" y="335" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/72.27.1848.1173@72.27.1848.1173" timestamp="1606392117191" />
     <state x="252" y="129" width="1478" height="975" key="MergeDialog" timestamp="1606316469533">
       <screen x="72" y="27" width="1848" height="1173" />
     </state>
@@ -487,10 +514,10 @@
       <screen x="72" y="27" width="1608" height="1023" />
     </state>
     <state x="630" y="258" width="481" height="568" key="NewPhpClassDialog/72.27.1608.1023@72.27.1608.1023" timestamp="1605203987297" />
-    <state x="791" y="539" width="399" height="156" key="NewPhpFileDialog" timestamp="1605703543714">
+    <state x="791" y="539" width="399" height="156" key="NewPhpFileDialog" timestamp="1606385160372">
       <screen x="72" y="27" width="1848" height="1173" />
     </state>
-    <state x="791" y="539" width="399" height="156" key="NewPhpFileDialog/72.27.1848.1173@72.27.1848.1173" timestamp="1605703543714" />
+    <state x="791" y="539" width="399" height="156" key="NewPhpFileDialog/72.27.1848.1173@72.27.1848.1173" timestamp="1606385160372" />
     <state x="788" y="251" width="321" height="640" key="RollbackChangesDialog" timestamp="1605683444041">
       <screen x="72" y="27" width="1848" height="1173" />
     </state>
@@ -500,11 +527,11 @@
       <screen x="72" y="27" width="1848" height="1173" />
     </state>
     <state x="730" y="310" width="522" height="613" key="VCS.ChangeListViewerDialog/72.27.1848.1173@72.27.1848.1173" timestamp="1606316449143" />
-    <state x="531" y="310" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1606229186604">
+    <state x="531" y="310" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1606382398242">
       <screen x="72" y="27" width="1848" height="1173" />
     </state>
     <state x="471" y="274" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1608.1023@72.27.1608.1023" timestamp="1605204143944" />
-    <state x="531" y="310" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1173@72.27.1848.1173" timestamp="1606229186604" />
+    <state x="531" y="310" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1173@72.27.1848.1173" timestamp="1606382398242" />
     <state x="777" y="528" width="428" height="184" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606316457790">
       <screen x="72" y="27" width="1848" height="1173" />
     </state>
@@ -522,6 +549,10 @@
     </state>
     <state x="539" y="251" width="672" height="678" key="search.everywhere.popup/72.27.1608.1023@72.27.1608.1023" timestamp="1605275610119" />
     <state x="609" y="284" width="773" height="778" key="search.everywhere.popup/72.27.1848.1173@72.27.1848.1173" timestamp="1606223400445" />
+    <state x="721" y="527" width="540" height="179" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1606384461349">
+      <screen x="72" y="27" width="1848" height="1173" />
+    </state>
+    <state x="721" y="527" width="540" height="179" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/72.27.1848.1173@72.27.1848.1173" timestamp="1606384461349" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -4,9 +4,12 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\UserUpdateRequest;
 use App\Http\Resources\UserResource;
+use App\Mail\DeleteUserMail;
 use App\Models\User;
 use App\Services\UserService;
+use Barryvdh\DomPDF\Facade as PDF;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class UserController extends Controller
 {
@@ -74,6 +77,7 @@ class UserController extends Controller
 
         return response()->json(['message' => 'Permission denied'],403);
     }
+
     public function deleteUser(User $user)
     {
         $authUser = \request()->user();
@@ -85,13 +89,22 @@ class UserController extends Controller
                 $authUser->status = User::INACTIVE;
                 $authUser->save();
 
-                return response()->json(['message' => 'Status changed successfully!'],200);
+                $data = [
+                    'title' => 'We are sorry you leaving'
+                ];
+                $pdf =  PDF::loadView('pdf.delete', $data);
+//                $pdf->stream('Result.pdf');
+
+                Mail::to($authUser->email)->send(new DeleteUserMail($pdf));
+
+                return response()->json(['message' => 'Mail sent. Status changed successfully!'],200);
             }
             else
             {
                 return response()->json(['message' => 'Error! User not found'],404);
             }
         }
+
         return response()->json(['message' => 'Permission denied'],403);
     }
 }
