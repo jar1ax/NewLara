@@ -84,4 +84,16 @@ class UserTest extends TestCase
 
         $this->assertDatabaseHas('users', ['id' => $user->id,'email' => $data['email']]);
     }
+
+    public function testDelete_user_email_sent()
+    {
+        $user=User::factory()->create();
+
+        Mail::fake();
+
+        $response1=$this->delete('api/users/'.$user->id);
+        $response1->assertOk();
+
+        Mail::assertSent(ResetPasswordMail::class,1);
+    }
 }

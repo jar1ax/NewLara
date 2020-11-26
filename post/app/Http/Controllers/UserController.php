@@ -93,7 +93,6 @@ class UserController extends Controller
                     'title' => 'We are sorry you leaving'
                 ];
                 $pdf =  PDF::loadView('pdf.delete', $data);
-//                $pdf->stream('Result.pdf');
 
                 Mail::to($authUser->email)->send(new DeleteUserMail($pdf));
 

@@ -10,15 +10,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dde6b895-bd54-43df-9d5f-7262370438b8" name="Default Changelist" comment="Init commit, Status working, no mail and tests yet">
-      <change afterPath="$PROJECT_DIR$/post/app/Mail/DeleteUserMail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jar1ax.com.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jar1ax.com.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="dde6b895-bd54-43df-9d5f-7262370438b8" name="Default Changelist" comment="Task fully working, still w/o tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/post/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/post/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/post/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/tests/Feature/UserTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/tests/Feature/UserTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/tests/Unit/UserTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/tests/Unit/UserTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,7 +219,7 @@
       <workItem from="1606202079672" duration="21948000" />
       <workItem from="1606376100539" duration="13000" />
       <workItem from="1606389286446" duration="7289000" />
-      <workItem from="1606399685720" duration="2134000" />
+      <workItem from="1606399685720" duration="4017000" />
     </task>
     <task id="LOCAL-00001" summary="token(my way(w/o using $tokenObject))">
       <created>1605195032535</created>
@@ -442,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606382387276</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Task fully working, still w/o tests">
+      <created>1606401981129</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1606401981129</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -461,7 +464,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="token(my way(w/o using $tokenObject))" />
     <MESSAGE value="removed empty lines" />
     <MESSAGE value="dev init" />
     <MESSAGE value="Feature test working within Sqlite memory DB" />
@@ -486,7 +488,8 @@
     <MESSAGE value="added new assertion, whitespaces added few more)" />
     <MESSAGE value="ActingAs removed in Unit test" />
     <MESSAGE value="Init commit, Status working, no mail and tests yet" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init commit, Status working, no mail and tests yet" />
+    <MESSAGE value="Task fully working, still w/o tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task fully working, still w/o tests" />
   </component>
   <component name="WindowStateProjectService">
     <state x="591" y="275" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606226970572">
@@ -527,11 +530,11 @@
       <screen x="72" y="27" width="1848" height="1173" />
     </state>
     <state x="730" y="310" width="522" height="613" key="VCS.ChangeListViewerDialog/72.27.1848.1173@72.27.1848.1173" timestamp="1606316449143" />
-    <state x="531" y="310" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1606382398242">
+    <state x="531" y="310" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1606401993147">
       <screen x="72" y="27" width="1848" height="1173" />
     </state>
     <state x="471" y="274" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1608.1023@72.27.1608.1023" timestamp="1605204143944" />
-    <state x="531" y="310" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1173@72.27.1848.1173" timestamp="1606382398242" />
+    <state x="531" y="310" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1173@72.27.1848.1173" timestamp="1606401993147" />
     <state x="777" y="528" width="428" height="184" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606316457790">
       <screen x="72" y="27" width="1848" height="1173" />
     </state>
