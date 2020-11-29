@@ -2,6 +2,7 @@
 
 namespace Tests\Unit;
 
+use App\Mail\DeleteUserMail;
 use App\Mail\ResetPasswordMail;
 use App\Models\User;
 use App\Services\UserService;
@@ -18,7 +19,7 @@ use function PHPUnit\Framework\assertJson;
 class UserTest extends TestCase
 {
     use RefreshDatabase;
-    use DatabaseMigrations;
+//    use DatabaseMigrations;
 
     public $mockConsoleOutput = false;
     protected $userService;
@@ -91,9 +92,10 @@ class UserTest extends TestCase
 
         Mail::fake();
 
+        Passport::actingAs($user);
         $response1=$this->delete('api/users/'.$user->id);
         $response1->assertOk();
 
-        Mail::assertSent(ResetPasswordMail::class,1);
+        Mail::assertSent(DeleteUserMail::class,1);
     }
 }

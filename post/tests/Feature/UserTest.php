@@ -16,7 +16,7 @@ use Tests\TestCase;
 class UserTest extends TestCase
 {
     use RefreshDatabase;
-    use DatabaseMigrations;
+//    use DatabaseMigrations;
 
     public $mockConsoleOutput = false;
     /**

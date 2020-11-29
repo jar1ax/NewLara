@@ -11,8 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dde6b895-bd54-43df-9d5f-7262370438b8" name="Default Changelist" comment="Task fully working, still w/o tests">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/.env.testing" beforeDir="false" afterPath="$PROJECT_DIR$/post/.env.testing" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/post/tests/Feature/UserTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/tests/Feature/UserTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/post/tests/Unit/UserTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/tests/Unit/UserTest.php" afterDir="false" />
     </list>
@@ -169,9 +168,13 @@
       <path value="$PROJECT_DIR$/post/vendor/phenx/php-svg-lib" />
       <path value="$PROJECT_DIR$/post/vendor/dompdf/dompdf" />
       <path value="$PROJECT_DIR$/post/vendor/lcobucci/clock" />
+      <path value="$PROJECT_DIR$/post/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/post/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/post/vendor/doctrine/event-manager" />
     </include_path>
   </component>
   <component name="ProjectId" id="1k6FryK2oH90h3pNytriBtA4hup" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
