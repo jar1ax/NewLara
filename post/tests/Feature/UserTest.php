@@ -16,7 +16,7 @@ use Tests\TestCase;
 class UserTest extends TestCase
 {
     use RefreshDatabase;
-    use DatabaseMigrations;
+//    use DatabaseMigrations;
 
     public $mockConsoleOutput = false;
     /**
@@ -122,5 +122,19 @@ class UserTest extends TestCase
 
         $this->get('api/users/'.$user2->id)->assertStatus(403)->assertJsonStructure(['message']);
     }
+
+    public function testDelete_user()
+    {
+        $user = User::factory()->create();
+        $user2 = User::factory()->create();
+
+        Passport::actingAs($user);
+        $this->delete('api/users/'.$user->id)->assertOk();
+
+        $this->delete('api/users/'.rand(4,7))->assertStatus(404);
+
+        $this->delete('api/users/'.$user2->id)->assertStatus(403)->assertJsonStructure(['message']);
+    }
+
 }
 

@@ -119,6 +119,12 @@
       <path value="$PROJECT_DIR$/post/vendor/guzzlehttp/psr7" />
       <path value="$PROJECT_DIR$/post/vendor/guzzlehttp/promises" />
       <path value="$PROJECT_DIR$/post/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/post/vendor/barryvdh/laravel-dompdf" />
+      <path value="$PROJECT_DIR$/post/vendor/phenx/php-font-lib" />
+      <path value="$PROJECT_DIR$/post/vendor/sabberworm/php-css-parser" />
+      <path value="$PROJECT_DIR$/post/vendor/phenx/php-svg-lib" />
+      <path value="$PROJECT_DIR$/post/vendor/dompdf/dompdf" />
+      <path value="$PROJECT_DIR$/post/vendor/lcobucci/clock" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.3" />
